@@ -63,14 +63,14 @@ public class MyIntTest {
 
 	@Test
 	public void testIsOddint() {
-		assertEquals(false, MyInteger.isOdd(2));
-		assertEquals(true, MyInteger.isOdd(3));
+		assertEquals(false, MyInteger.isOdd(6));
+		assertEquals(true, MyInteger.isOdd(11));
 	}
 
 	@Test
 	public void testIsPrimeint() {
-		assertEquals(false, MyInteger.isPrime(4));
-		assertEquals(true, MyInteger.isPrime(3));
+		assertEquals(false, MyInteger.isPrime(6));
+		assertEquals(true, MyInteger.isPrime(1));
 	}
 
 	@Test
@@ -94,13 +94,13 @@ public class MyIntTest {
 	@Test
 	public void testEqualsInt() {
 		assertEquals(true, testcase.equals(4));
-		assertEquals(false, testcase2.equals(5));
+		assertEquals(false, testcase2.equals(30));
 
 	}
 
 	@Test
 	public void testEqualsMI() {
 		assertEquals(true, testcase.equals(4));
-		assertEquals(false, testcase2.equals(6));
+		assertEquals(false, testcase2.equals(100));
 	}
 }
